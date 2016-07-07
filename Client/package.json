@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "babel": {
-    "presets": [
-      "es2015",
-      "react"
-    ]
-  },
   "scripts": {
     "lint": "node_modules/.bin/esw webpack.config.* src/**",
     "lint:watch": "npm run lint -- --watch",
@@ -39,6 +33,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "babel-preset-es2015": "^6.9.0",
     "immutable": "^3.8.1",
     "react": "^15.1.0",
     "react-addons-pure-render-mixin": "^15.1.0",
